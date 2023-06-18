@@ -12,7 +12,7 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
+  --border-color: #d1a11d;
   --text-decoration-color: #ff9a00;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 
 .intro__icon path {
-  fill: var(--text-decoration-color);
+  fill: #d1a11d
 }
 
 .intro_text {
@@ -257,4 +257,82 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.header {
+  display: flex;
+}
+.resume__avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(assets/avatar.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.personal-information {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 50px;
+}
+.personal-information h1 {
+  margin-top: 40px;
+}
+.personal-information h2 {
+  margin-top: 5px;
+  color: #af881c;
+  font-weight: 400;
+}
+.links {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+.link, .link:visited, .link:link  {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.link:hover, .link:hover svg {
+  color: #af881c;
+  fill: #af881c;
+}
+.link svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.skills {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+.projects__header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.project a {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.project a, .project {
+  margin-bottom: 10px;
+}
+.project span {
+  color: var(--secondary-text-color);
+  margin-left: 5px;
 }
